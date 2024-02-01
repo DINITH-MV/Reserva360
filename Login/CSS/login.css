@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Dancing+Script&family=Fira+Sans:wght@400&family=Schibsted+Grotesk&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Coda&family=Dancing+Script&family=Fira+Sans:wght@400&family=Spirax&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/project2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+.backButton {
+  padding:5px;
+  width:40px;
+  background-color: rgb(0, 0, 0);
+  color:white;
+  transform: translate(45%, -60%);
+}
+
+.backButton:hover{
+  background-color: rgb(199, 199, 199);
+  color:black
+}
+
+.logoText {
+  font-family: 'Spirax', cursive;
+  color: rgb(0, 10, 120);
+  font-size: 25px;
+  transform: translate(0, 40%);
+  border:2px solid rgb(0, 10, 120);
+  border-radius:7px;
+  width:180px;
+  text-align: center;
+  margin:auto;
+  padding:1px;
+}
+
+.logoText span {
+  font-family: 'Coda', cursive; 
+  font-size: 18px;
+  color: rgb(0, 10, 120);
+}
+
+.logoText i {
+    transform: translate(0%,-90%);
+    font-size: 20px;
+    color:rgb(184, 189, 40); 
+    margin-left:5px;
+}
+
+#logInBox {
+  width: 450px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 67vh;
+  margin: 70px auto;
+  background-color: rgba(186, 186, 186, 0.4);
+  border-radius: 20px;
+}
+
+#logInBox h3 {
+  text-align: center;
+  font-size: 25pt;
+  margin-bottom: 10px;
+}
+
+.signInPart {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.signInPart h3 {
+  font-size: 20pt;
+}
+
+.keepItSign {
+  font-size: 10pt;
+}
+
+.inputBoxes input {
+  border: 1px solid rgb(211, 211, 211);
+  padding: 20px;
+  font-size: 14pt;
+  margin-bottom: 3px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 380px;
+  transition: all .7s;
+}
+
+.inputBoxes input:hover{
+  background-color: white;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(86, 86, 86);
+}
+
+input:focus {
+  outline: none;
+}
+
+.inputBoxes {
+  margin-bottom: 7px;
+  position: relative;
+}
+
+/* label animation starts */
+
+.label {
+  position:absolute;
+  top:30px;
+  left:16px;
+  z-index:4;
+  color:rgba(255, 255, 255,0.1);
+  transition: top .7s;
+}
+
+.label2 {
+  position:absolute;
+  top:110px;
+  left:16px;
+  z-index:4;
+  color:rgba(255, 255, 255, 0.1);
+  transition: top .7s;
+}
+
+.input-text:focus ~ .label{
+  top: -0.1px;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  padding:1px;
+  width:56px;
+  color: #000;
+  border-radius: 4px;
+}
+
+.input-text2:focus ~ .label2{
+  top: 76.6px;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  padding-left: 2px;
+  width:56px;
+  border-radius: 4px;
+  color:black;
+}
+
+/* label animation ends */
+
+.checkboxText {
+  margin-bottom: 5px;
+}
+
+.siteUnderline{
+  text-decoration:none;
+}
+
+.keepItSign {
+  margin-left: 35px;
+}
+
+.agreement {
+  margin-left: 15px;
+}
+
+.error {
+  color:red;
+  margin-bottom:10px;
+  margin-left:5px;
+}
+
+/* Hide the default checkboxes */
+.keepItSign input,
+.agreement input {
+  opacity: 0;
+}
+
+/* Create the new check boxes */
+.checkbox1 {
+  margin-left: 10px;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+
+  border-radius:2px;
+}
+
+.border1 {
+    transform: translate(-3%, -100%);
+}
+
+.checkbox2 {
+  margin-left: 10px;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+
+  border-radius:2px;
+}
+
+.border2 {
+    transform:translate(-8.3%, -193%)
+}
+
+.keepItSign:hover input ~ .checkbox1 {
+  background-color: rgb(187, 187, 187);
+}
+
+.agreement:hover input ~ .checkbox2 {
+  background-color: rgb(193, 114, 114);
+}
+
+
+.keepItSign input:checked ~ .checkbox1 {
+  background-color: black;
+}
+
+.agreement input:checked ~ .checkbox2 {
+  background-color: rgb(178, 0, 0);
+}
+
+/* hide checkmark */
+.checkbox1:after,
+.checkbox2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.keepItSign input:checked ~ .checkbox1:after,
+.agreement input:checked ~ .checkbox2:after {
+  display: block;
+}
+
+/* To style checkmark */ 
+.keepItSign .checkbox1:after,
+.agreement .checkbox2:after {
+  left: 4px;
+  top: 0;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+
+  transform: rotate(45deg);
+}
+
+.bottomTextPart {
+  font-family: "Schibsted Grotesk", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 22px;
+  width: 400px;
+  font-size: 11pt;
+}
+
+.nextLine {
+  padding-left: 15px;
+}
+
+button {
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  width: 400px;
+}
+
+button:hover {
+  background-color: rgb(204, 204, 204);
+  transition: 0.4s;
+}
+
+.passWithIcon {
+  font-family: "Schibsted Grotesk", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.remLine {
+  text-decoration: none;
+}
+
+.icons {
+  position: relative;
+  margin: auto;
+  margin-top: 5px;  
+}
+
+.icons a {
+    color:rgb(67, 67, 67);
+    text-decoration: none;
+    margin-left:5px;
+}
+
+#apple {
+  font-size: 14pt;
+}
+
+#google {
+  font-size: 10pt;
+}

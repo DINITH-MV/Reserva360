@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <div id="logo">
+        <h1>Reservation</h1>
+      </div>
+      <div>
+        <button type="button" class="backButton">
+          <i class="fa fa-duotone fa-arrow-left"></i>
+          <a href="#"></a>
+        </button>
+      </div>
+    </section>
+    <section id="logInBox">
+      <div class="signInPart">
+        <h3>Sign in</h3>
+        <div class="inputBoxes">
+          <input type="email" placeholder="Email address" id="email" /><br />
+          <input type="password" id="password" placeholder="Password" /><br />
+        </div>
+        <div class="checkboxText">
+          <label class="keepItSign"
+            >Keep me signed in
+            <div class="border1">
+              <input type="checkbox" />
+              <span class="checkbox1"></span>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="bottomTextPart">
+        <label class="agreement">
+          I agree to the
+          <a href="#" class="siteUnderline">Reservation.lk</a> site's
+          <a href="#">Terms and Conditions</a>
+          <br />
+          <label class="nextLine">and <a href="#"> Privacy Statement</a></label>
+          <div class="border2">
+            <input type="checkbox" id="checkbox2" onclick="enableButton()" />
+            <span class="checkbox2"></span>
+          </div>
+        </label>
+      </div>
+      <div>
+        <button type="submit" id="signIn" onclick="filled()">Sign in</button>
+
+        <div class="passWithIcon">
+          <a href="forgotPassword.html">Forgot password?</a><br /><br />
+          <p>
+            Don't have an account?
+            <a href="create_one.html" target="_blank" class="remLine">Create one</a>
+          </p>
+          <br/>
+          <div>
+            <p>or continue with</p>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-apple" id="apple"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-google" id="google"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../JS/login.js"></script>
+    </section>
+  </body>
+</html>
