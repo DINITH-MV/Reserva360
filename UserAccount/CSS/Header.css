@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Coda&family=Dancing+Script&family=Fira+Sans:wght@400&family=Spirax&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#bannerBox1 {
+  width: 70%;
+  height: 45px;
+  background-color: rgb(0, 0, 100);
+  position: static;
+  border-radius: 12px;
+  position: relative;
+  margin: auto;
+  margin-top: 15px;
+  padding-top: 7px;
+  max-width: 1300px;
+}
+
+.logoText a {  
+  position: relative;
+  font-family: "Spirax", cursive;
+  color: white;
+  font-size: 25px;
+  border-radius: 7px;
+  width: 180px;
+  text-align: center;
+  padding: 1px;
+  margin: auto;
+  text-decoration: none;
+}
+
+.logoText {
+  position: relative;
+  font-family: 'Spirax', cursive;
+  color: white;
+  font-size: 25px;  
+  border:2px solid rgb(255, 255, 255);
+  border-radius:7px;
+  width:180px;
+  text-align: center;
+  padding:1px;
+  margin: auto;
+}
+
+.logoText span {
+  font-family: 'Coda', cursive; 
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.logoText i {
+    transform: translate(0%,-90%);
+    font-size: 20px;
+    color:rgb(252, 255, 180); 
+    margin-left:5px;
+}
+
+
+#button {
+  position: absolute;
+  margin-right: 20px;
+  padding: 4px 9px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  transform: translate(850%, 120%);
+  z-index: 21;
+  border: none;
+  background-color: rgb(255, 189, 189);
+}
+
+#profileWithNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 79.7%;  
+  transform: translate(-3.7%, -8%);
+}
+
+#profilePosition {
+  margin-top: 5px;
+  transform: translate(840%, 28%);
+  margin-left: 40px;
+  z-index: 20;
+}
+
+#profile {
+  width: 80px;
+  padding:22px 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(106, 0, 0);
+}
+
+#profile p {
+  position:absolute;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 11px;
+  transform: translate(-20%, -50%);
+}
+
+.name {
+  text-align: center;
+}
+
+#profile img {
+  float: right;
+  width: 39%;
+  border-radius: 10px;
+  transform: translate(50%,-50%);
+}
+
+#nav { 
+  width:800px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-left: 15%;
+}
+
+#nav a{
+  text-decoration: none;
+  color: #000000;
+}
+
+#nav button {  
+  width: 140px;
+  height: 40px;
+  margin-right: 5%;
+  transform:translate(-84%,7%);
+  border-radius: 10px;
+  border: none;  
+  font-size: 12pt;
+  background-color: rgb(212, 212, 212);  
+  color: #000000;
+}
+
+#nav button:nth-child(1) {
+  color: rgb(255, 255, 255);
+  background-color: rgb(118, 118, 118);
+}
+
+#behindBox {
+  background-color: rgb(237, 237, 237);
+  transform: translate(-2.7%,20%);
+  z-index: -1;
+  width: 1200px;
+  border-radius: 7px;
+}

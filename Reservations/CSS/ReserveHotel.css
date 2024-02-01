@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400&family=Dancing+Script&family=Fira+Sans:wght@100&family=Schibsted+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Coda&family=Dancing+Script&family=Fira+Sans:wght@400&family=Spirax&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/project2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+}
+
+.logoText {
+  font-family: "Spirax", cursive;
+  color: rgb(0, 10, 120);
+  font-size: 25px;
+  transform: translate(0, 40%);
+  border: 2px solid rgb(0, 10, 120);
+  border-radius: 7px;
+  width: 180px;
+  text-align: center;
+  margin: auto;
+  padding: 1px;
+}
+
+.logoText span {
+  font-family: "Coda", cursive;
+  font-size: 18px;
+  color: rgb(0, 10, 120);
+}
+
+.logoText i {
+  transform: translate(0%, -90%);
+  font-size: 20px;
+  color: rgb(184, 189, 40);
+  margin-left: 5px;
+}
+
+.backButton1 {
+  padding: 5px;
+  width: 40px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+  transform: translate(45%, -65%);
+}
+
+.backButton1 a {
+  color: black;
+}
+
+.backButton1:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.headerAndInputs {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.headerAndInputs h4 {
+  font-size: 15pt;
+  background-color: rgb(159, 159, 159);
+  width: 420px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  font-weight:normal;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.imageBorder {
+  width: 420px;
+  display: flex;
+  justify-content: center;
+  margin: 5px auto auto auto;
+  padding-bottom: 10px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(229, 229, 229);
+}
+
+.headerAndInputs img {
+  width: 200px;
+  margin-top: 9px;
+  border-radius: 12px;
+}
+
+.input-group {
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+label {
+  text-align: left;
+  width: 500px;
+  height: 40px;
+  font-size: 13pt;
+  color: #06063d;
+}
+
+.mainContent {
+  margin-top: 15px;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.mainContent h3 {
+  font-size: 20pt;
+}
+
+.keepItSign {
+  font-size: 10pt;
+}
+
+.inputBoxes input {
+  border: none;
+  padding: 5px 20px;
+  font-size: 11.5pt;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(182, 182, 182);
+  height: 30px;
+  text-align: center;
+}
+
+.hname ,.dates {
+    width: 250px;
+}
+
+.number {
+    width: 130px;
+}
+
+.inputBoxes input:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.7s;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(112, 112, 112);
+}
+
+:focus {
+  outline: none;
+}
+
+form {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 14px;
+  background-image: linear-gradient(rgb(195, 195, 195), rgb(255, 255, 255));
+  height: 560px;
+  margin-bottom: 20px;
+}
+
+.inputBoxes {
+  margin-bottom: 5px;
+}
+
+.nextLine {
+  padding-left: 15px;
+}
+
+#bookNow {
+  font-size: 12pt;
+  padding: 7px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(120, 120, 120);
+  color: white;
+  width: 300px;
+  font-family: "Fira Sans", sans-serif;
+  height: 40px;
+}
+
+button:hover {
+  background-color: rgb(204, 204, 204);
+  transition: 0.4s;
+}
+
+.passWithIcon {
+  font-family: "Schibsted Grotesk", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.remLine {
+  text-decoration: none;
+}
+
+.icons {
+  position: relative;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.icons a {
+  color: rgb(67, 67, 67);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+#apple {
+  font-size: 14pt;
+}
+
+#google {
+  font-size: 10pt;
+}

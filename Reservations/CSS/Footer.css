@@ -1,0 +1,53 @@
+#footer {
+    width: 100%;
+    height: 160px;
+    background-color: rgb(0, 0, 100);
+  }
+  
+  .footerText {
+    font-size: 14pt;
+    transform: translate(3%, 50%);
+    color: rgb(255, 255, 255);
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .paraText {
+    float: left;
+    margin: 40px 12.6%;
+  }
+
+  .paraText li{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .paraText a {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    color: white;
+  }
+
+  .footerLogoText {
+    font-family: 'Spirax', cursive;
+    color: white;
+    font-size: 25px;
+    transform: translate(5.5%, 30%);    
+    margin-left:8.4%;
+    text-align: center;
+    width:140px;
+  }
+
+  .footerLogoText span {
+    font-family: 'Coda', cursive; 
+    font-size: 18px;
+  }
+
+  .paraText .align1 {
+    width:90px;
+  }
+
+  .paraText .align2 {
+    width:120px;
+  }

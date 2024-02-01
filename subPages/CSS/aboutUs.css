@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Coda&family=Dancing+Script&family=Fira+Sans:wght@400&family=Spirax&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-size: 14px;
+}
+
+#image {
+  background-image: url("../images/aboutUs.png");
+  background-size: cover;
+  background-position: bottom right;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+#logInBox {
+  width: 450px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  margin: 70px auto;
+  background-color: rgba(214, 214, 214, 0.6);
+  border-radius: 10px;
+}
+
+#logInBox h2 {
+  text-align: center;
+  font-size: 25pt;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.signInPart {
+  font-family: "Fira Sans", sans-serif;
+}
+
+#text {
+  padding: 20px;
+  text-align: justify;
+}
+
+#footerPosition {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#footer {    
+    width: 70%;
+    height: 160px;
+    background-color: rgb(0, 0, 100);
+    max-width: 1300px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .footerText {
+    font-size: 14pt;
+    transform: translate(3%, 50%);
+    color: rgb(255, 255, 255);
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .paraText {
+    float: left;
+    margin: 40px 12.6%;
+  }
+
+  .paraText li{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .paraText a {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    color: white;
+  }
+
+  .footerLogoText {
+    font-family: 'Spirax', cursive;
+    color: white;
+    font-size: 25px;
+    transform: translate(5.5%, 30%);    
+    margin-left:8.4%;
+    text-align: center;
+    width:140px;
+  }
+
+  .footerLogoText span {
+    font-family: 'Coda', cursive; 
+    font-size: 18px;
+  }
+
+  .paraText .align1 {
+    width:90px;
+  }
+
+  .paraText .align2 {
+    width:120px;
+  }
