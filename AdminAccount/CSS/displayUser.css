@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Coda&family=Dancing+Script&family=Fira+Sans:wght@400&family=Spirax&display=swap');
+
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+#positions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: auto 15%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#navPosition1 {
+  width:400px;
+  transform: translate(55%, 0%);
+  }
+
+#navPosition2 {
+  width:70px;
+  padding: 0;
+  transform: translate(-160%, 0%);
+}
+
+.line {
+  position: absolute;
+  border-right: 1px solid rgb(255, 255, 255);
+  height: 20px;
+  transform: translate(-160%,-90%);
+  margin-left:5px;
+}
+
+.addUser{
+  display:flex;
+  margin: 10px auto;
+  width:120px;
+  padding:5px 21px;
+  border: none;
+  background-color: rgb(25, 53, 0);
+  color:white;
+  border-radius: 4px;
+  cursor:cell;
+}
+
+.addUser a{
+  text-decoration: none;
+  background-color: rgb(25, 53, 0);
+  color:white;
+  border-radius: 4px;
+  cursor:cell;
+}
+
+.animPosition {
+  display: relative;
+  margin: auto;
+  border: 4px solid black;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow: hidden; */
+  list-style-type: none;
+  margin: 10px auto;
+  background-color: rgb(0, 0, 0);
+  padding: 7px 1px 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 239, 239);
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+
+#navPosition2 nav {
+  background-color: rgb(93, 93, 93);
+  width:75px;
+  margin-right: -8px;
+  border: none;
+}
+
+.navBar2 {
+  display: flex;
+  flex-direction: row;
+  margin:10px;
+  width: 200px;
+  transform: translate(-100%,-16%);
+}
+
+.navBar a, .navBar2 a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-right: 6px;
+  padding-left: 6px;
+  font-family: "Fira Sans", sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+/* start of nav animation */
+
+#navPosition1 .animation, #navPosition2 .animation {
+  position: absolute;
+  height: 5px;
+  /* height: 5px; */
+  bottom: 4px;
+  /* bottom: 0; */
+  z-index: 0;
+  background: #ffffff;
+  width: 100px;
+  border-radius: 8px;
+  transition: all 0.5s ease 0s;
+}
+#navPosition1 a:nth-child(1) {
+  width: 60px;
+}
+#navPosition1 .start-explore,
+#navPosition1 a:nth-child(1):hover ~ .animation {
+  width: 55px;
+  left: 13px;
+}
+#navPosition1 a:nth-child(2) {
+  width: 60px;
+}
+#navPosition1 .start-packages,
+#navPosition1 a:nth-child(2):hover ~ .animation {
+  width: 60px;
+  left: 90px;
+}
+#navPosition1 a:nth-child(3) {
+  width: 50px;
+}
+#navPosition1 .start-hotel,
+#navPosition1 a:nth-child(3):hover ~ .animation {
+  width: 45px;
+  left: 168px;
+}
+#navPosition1 a:nth-child(4) {
+  width: 93px;
+}
+#navPosition1 .start-things-to-do,
+#navPosition1 a:nth-child(4):hover ~ .animation {
+  width: 93px;
+  left: 232px;
+}
+#navPosition1 a:nth-child(5) {
+  width: 45px;
+}
+#navPosition1 .start-deals,
+#navPosition1 a:nth-child(5):hover ~ .animation {
+  width: 45px;
+  left: 340px;
+}
+
+#navPosition1 a:nth-child(1),
+#navPosition1 a:nth-child(2),
+#navPosition1 a:nth-child(3),
+#navPosition1 a:nth-child(4){
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+#navPosition2 a:nth-child(1) {
+  width: 45px;
+}
+
+#navPosition2 .start-admin {
+  left: 16px;
+  width: 0;
+}
+
+#navPosition2 a:nth-child(1):hover ~ .animation {
+  width: 45px;
+  left: 16px;
+}
+
+#navPosition2 a:nth-child(2) {
+  width: 10px;
+}
+
+#navPosition2 .start-user {
+  left:16px;
+  width:45px;
+}
+
+#navPosition2 a:nth-child(2):hover ~ .animation {
+  width: 10px;
+  left: 16px;
+}
+
+/* end of nav animation */
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  table-layout: fixed;
+}
+
+th {
+  background-color: rgb(221, 221, 221);
+  height: 30px;
+}
+
+td,
+th {
+  border: 1px solid black;
+  font-size: 10pt;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#officialSite {
+  max-width: 200px;
+}
+
+.update, .update a,
+.delete, .delete a{
+  padding: 5px 10px;
+  width:100px;
+  padding:5px 14px;
+  border: none;  
+  color:white;
+  border-radius: 3px;
+  cursor:cell;
+  text-decoration: none;
+  margin: 3px;
+}
+
+.update, .update a{
+  background-color: rgb(194, 160, 79);
+}
+
+.delete, .delete a{
+  background-color: rgb(138, 0, 0);
+}
